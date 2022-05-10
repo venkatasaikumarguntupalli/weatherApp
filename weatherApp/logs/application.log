@@ -1,0 +1,103 @@
+2022-05-10 03:32:38.070  INFO 75975 --- [cluster-ClusterId{value='6278f991a677e460ad609d39', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.2.3.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_171]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512) ~[mongodb-driver-core-4.2.3.jar:na]
+	... 5 common frames omitted
+
+2022-05-10 03:32:39.370  INFO 75975 --- [cluster-ClusterId{value='6278f991a677e460ad609d39', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:1571}] to localhost:27017
+2022-05-10 03:32:39.370  INFO 75975 --- [cluster-ClusterId{value='6278f991a677e460ad609d39', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1030115531}
+2022-05-10 05:32:50.529  INFO 75975 --- [cluster-ClusterId{value='6278f991a677e460ad609d39', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.2.3.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_171]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512) ~[mongodb-driver-core-4.2.3.jar:na]
+	... 5 common frames omitted
+
+2022-05-10 05:32:51.955  INFO 75975 --- [cluster-ClusterId{value='6278f991a677e460ad609d39', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:11, serverValue:1573}] to localhost:27017
+2022-05-10 05:32:51.956  INFO 75975 --- [cluster-ClusterId{value='6278f991a677e460ad609d39', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1170033240}
+2022-05-10 07:33:04.433  INFO 75975 --- [cluster-ClusterId{value='6278f991a677e460ad609d39', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.2.3.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_171]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647) ~[mongodb-driver-core-4.2.3.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512) ~[mongodb-driver-core-4.2.3.jar:na]
+	... 5 common frames omitted
+
+2022-05-10 07:33:04.863  INFO 75975 --- [cluster-ClusterId{value='6278f991a677e460ad609d39', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:12, serverValue:1574}] to localhost:27017
+2022-05-10 07:33:04.864  INFO 75975 --- [cluster-ClusterId{value='6278f991a677e460ad609d39', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=421289976}
+2022-05-10 10:26:32.054  INFO 75975 --- [http-nio-8083-exec-7] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:9, serverValue:1563}] to localhost:27017 because there was a socket exception raised on another connection from this pool.
+2022-05-10 10:26:32.055  INFO 75975 --- [http-nio-8083-exec-7] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:8, serverValue:1562}] to localhost:27017 because there was a socket exception raised on another connection from this pool.
+2022-05-10 10:26:32.055  INFO 75975 --- [http-nio-8083-exec-7] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:7, serverValue:1561}] to localhost:27017 because there was a socket exception raised on another connection from this pool.
+2022-05-10 10:26:32.101  INFO 75975 --- [http-nio-8083-exec-7] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:13, serverValue:1578}] to localhost:27017
+2022-05-10 10:32:14.550  INFO 75975 --- [http-nio-8083-exec-9] c.e.w.service.WeatherServiceImpl         : 32
+2022-05-10 10:32:14.550  INFO 75975 --- [http-nio-8083-exec-9] c.e.w.service.WeatherServiceImpl         : 42
+2022-05-10 10:51:54.540  INFO 75975 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : -4
+2022-05-10 10:51:54.540  INFO 75975 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 8
+2022-05-10 10:51:54.540  INFO 75975 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : -4
+2022-05-10 10:51:54.540  INFO 75975 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 8
+2022-05-10 10:51:54.637 TRACE 75975 --- [http-nio-8083-exec-1] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur102022-05-10' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.updateData(com.example.weatherApp.entity.WeatherEntity)] caches=[weather] | key='#weather.city+#weather.time+#weather.date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless=''
+2022-05-10 10:52:14.765  INFO 75975 --- [http-nio-8083-exec-2] c.e.w.service.WeatherServiceImpl         : 10
+2022-05-10 10:52:14.765 TRACE 75975 --- [http-nio-8083-exec-10] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur102022-05-10' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.getCurrentData(java.lang.String,java.lang.Integer,java.lang.String)] caches=[weather] | key='#city+#time+#date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+2022-05-10 10:52:14.765  INFO 75975 --- [http-nio-8083-exec-2] c.e.w.service.WeatherServiceImpl         : 10
+2022-05-10 10:52:14.766  INFO 75975 --- [http-nio-8083-exec-3] c.e.w.service.WeatherServiceImpl         : 2022-05-11
+2022-05-10 10:52:14.768  INFO 75975 --- [http-nio-8083-exec-3] c.e.w.service.WeatherServiceImpl         : 2022-05-12
+2022-05-10 10:52:14.768 TRACE 75975 --- [http-nio-8083-exec-10] o.s.cache.interceptor.CacheInterceptor   : Cache entry for key 'guntur102022-05-10' found in cache 'weather'
+2022-05-10 10:52:14.769  INFO 75975 --- [http-nio-8083-exec-3] c.e.w.service.WeatherServiceImpl         : 2022-05-13
+2022-05-10 10:52:14.769  INFO 75975 --- [http-nio-8083-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:14, serverValue:1583}] to localhost:27017
+2022-05-10 10:52:14.771  INFO 75975 --- [http-nio-8083-exec-3] c.e.w.service.WeatherServiceImpl         : 2022-05-14
+2022-05-10 10:52:14.772  INFO 75975 --- [http-nio-8083-exec-3] c.e.w.service.WeatherServiceImpl         : 2022-05-15
+2022-05-10 10:52:14.774  INFO 75975 --- [http-nio-8083-exec-3] c.e.w.service.WeatherServiceImpl         : 2022-05-16
+2022-05-10 10:52:36.323  INFO 75975 --- [http-nio-8083-exec-9] c.e.w.service.WeatherServiceImpl         : 10
+2022-05-10 10:52:36.323  INFO 75975 --- [http-nio-8083-exec-9] c.e.w.service.WeatherServiceImpl         : 10
+2022-05-10 10:55:34.227 TRACE 75975 --- [http-nio-8083-exec-8] o.s.cache.interceptor.CacheInterceptor   : Computed cache key 'guntur102022-05-10' for operation Builder[public com.example.weatherApp.entity.WeatherEntity com.example.weatherApp.service.WeatherServiceImpl.getCurrentData(java.lang.String,java.lang.Integer,java.lang.String)] caches=[weather] | key='#city+#time+#date' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+2022-05-10 10:55:34.228  INFO 75975 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 10
+2022-05-10 10:55:34.231  INFO 75975 --- [http-nio-8083-exec-1] c.e.w.service.WeatherServiceImpl         : 10
+2022-05-10 10:55:34.231 TRACE 75975 --- [http-nio-8083-exec-8] o.s.cache.interceptor.CacheInterceptor   : Cache entry for key 'guntur102022-05-10' found in cache 'weather'
+2022-05-10 10:55:34.232  INFO 75975 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 2022-05-11
+2022-05-10 10:55:34.234  INFO 75975 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 2022-05-12
+2022-05-10 10:55:34.234  INFO 75975 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 2022-05-13
+2022-05-10 10:55:34.235  INFO 75975 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 2022-05-14
+2022-05-10 10:55:34.237  INFO 75975 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 2022-05-15
+2022-05-10 10:55:34.238  INFO 75975 --- [http-nio-8083-exec-10] c.e.w.service.WeatherServiceImpl         : 2022-05-16
